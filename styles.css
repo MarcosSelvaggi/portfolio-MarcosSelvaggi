@@ -154,6 +154,24 @@ nav .right a span {
 
 /* Section 3: Github */
 
+.github-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.github-section h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.github-section .links {
+    
+    font-size: 20px;
+}
+
+.github-section .link .text{
+    text-align: center;
+}
 
 /* Section 4: Contacto */
 .contacto-section{
@@ -222,8 +240,21 @@ nav .right a span {
     .hero-section .foto img{
         width: 250px;
     }
+    /* Section 2: Habilidades */
+    .habilidades-section h2{
+        font-size: 30px;
+    }
+
+    /* Section 3: Github */
+    .github-section h2{
+        font-size: 30px;
+    }
 
     /* Section 4: Contacto */
+    .contacto-section h2{
+        font-size: 30px;
+    }
+
     .contacto-section .grupo{
         flex-direction: column;
     }
@@ -265,6 +296,11 @@ nav .right a span {
 
     .habilidades-section .celdas .celda span{
         font-size: 16px;
+    }
+
+    /* Section 3: Github */
+    .github-section{
+        padding: 0 20px;
     }
 
     /* Section 4: Contacto */

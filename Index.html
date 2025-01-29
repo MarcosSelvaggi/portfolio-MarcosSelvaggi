@@ -14,6 +14,8 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="shortcut icon" href="#" />
+    <script src="script.js"></script>
     <title>Portfolio Marcos</title>
 
 </head>
@@ -107,6 +109,30 @@
         </section>
         <!--Section 3: Github-->
         <section id="github" class="github-section">
+            <h2>Github</h2>
+            
+            <div class="links">
+                <div class="text">
+                    Acá algunos de los proyectos que cuatrimestre en la Tecnicatura como 
+                    también mientras estudiaba por mi cuenta. 
+                </div>
+                
+                <ul class="proyectos">
+                    <li>
+                        <a href="https://github.com/MarcosSelvaggi/portfolio-MarcosSelvaggi">Porfolio personal</a><br>
+                        <label>Portfolio personal, utiliza HTML, CSS y JS</label>
+                    </li>
+                    <li>
+                        <a href="https://github.com/MarcosSelvaggi/TPFinalNivel2_Selvaggi">TP Final del curso de nivel 2 de Maxi Programa</a><br>
+                        <label>Aplicación que usa winForm para manejar artículos desde una base de datos, usa una integración de C# con SQL Server</label>    
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/MarcosSelvaggi/Proyecto_Progracion_II">Proyecto de la materia Progamación II </a><br>
+                        <label>Una aplicación de consola en C++ de gestión empresarial, permite gestionar empleados, stock, clientes, pedidos y también realiza informes, junto con las facturas de los clientes, usa integración de C++ con ficheros</label>    
+                    </li>
+                </ul>
+            </div>
 
         </section>
         <!--Section 4: Contact-->
@@ -119,20 +145,21 @@
                 </div>
 
                 <form>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre">
+                    <label for="nombreContacto">Nombre</label>
+                    <input type="text" id="nombreContacto">
 
-                    <label for="email">Email</label>
-                    <input type="text" id="email">
+                    <label for="emailContacto" id=>Email</label>
+                    <input type="text" id="emailContacto">
                         
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" cols="30" rows="7"></textarea>
-                    <button type="submit">Enviar mensaje</button>
+                    <label for="mensajeContacto">Mensaje</label>
+                    <textarea id="mensajeContacto" cols="30" rows="7"></textarea>
+                    <button type="submit" id="btnEnviarMensaje" onclick="enviarMensaje()">Enviar mensaje</button>
                 </form>
                 
             </div>
         </section>
     </main>
+    
 </body>
 
 </html>
