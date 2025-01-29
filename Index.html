@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Portfolio Marcos</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <a href="/">Marcos Selvaggi</a>
+        </div>
+        <div class="right">
+            <a href="http://github.com/MarcosSelvaggi" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="http://linkedin.com/in/marcos-selvaggi-4273871b6" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="mailto:marcos.d.selvaggi@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <!--Section 1: Hero-->
+        <section class="hero-section">
+            <div class="text">
+                <h2>Bienvenido, soy Marcos </h2>
+                <p>Soy estudiante de la UTN - General Pachecho, me encuentro
+                    estudiando Tecnicatura en Programación y actualmente ando 
+                    viendo por mi cuenta HTML, CSS, Js junto con ASP.NET y base de datos.
+                </p>
+                <div class="links">
+                    <a href="#habilidades">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Habilidades</span>
+                    </a>
+                    <a href="#github">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Github</span>
+                    </a>
+                    <a href="#contacto">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contacto</span>
+                    </a>
+                </div>
+            </div>
+            <div class="foto">
+                <img src="imagenes/foto.webp" alt="Foto personal">
+            </div>
+        </section>
+        <!--Section 2: Habilidades-->
+        <section id="habilidades" class="habilidades-section">
+            <h2>Habilidades</h2>
+            <div class="text">
+                <p>Algunas de las tecnologias que manejo son las siguientes, más adelante podrás consultar mis repositorios en Github donde podrás consultar mis proyectos.</p>
+            </div>
+            <div class="celdas">
+                <div class="celda">
+                    <img src="imagenes\html-logo.webp" alt="Logo HTML">
+                    <span>HTML</span>
+                </div>
+
+                <div class="celda">
+                    <img src="imagenes\css-logo.webp" alt="Logo CSS">
+                    <span>CSS</span>
+                </div>
+
+                <div class="celda">
+                    <img src="imagenes\javascript-logo.webp" alt="Logo JavaScrip">
+                    <span>JavaScrip</span>
+                </div>
+
+                <div class="celda">
+                    <img src="imagenes\csharp-logo.webp" alt="Logo C#">
+                    <span>C#</span>
+                </div>
+
+                <div class="celda">
+                    <img src="imagenes\aspnet-logo.webp" alt="Logo ASP.NET">
+                    <span>ASP.NET</span>
+                </div>
+
+                <div class="celda">
+                    <img src="imagenes\sqlserver-logo.webp" alt="Logo SQL Server">
+                    <span>SQL Server</span>
+                </div>
+
+            </div>
+        </section>
+        <!--Section 3: Github-->
+        <section id="github" class="github-section">
+
+        </section>
+        <!--Section 4: Contact-->
+        <section id="contacto" class="contacto-section">
+            <h2>Contacto</h2>
+
+            <div class="grupo">
+                <div class="text">
+                    Puedes ponerte en contacto conmigo a través del siguiente formulario.
+                </div>
+
+                <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                        
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" cols="30" rows="7"></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+                
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
