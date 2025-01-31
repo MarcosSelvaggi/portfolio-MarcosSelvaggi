@@ -42,10 +42,10 @@ nav .left a {
 }
 nav .right a {
     color: var(--text-color);
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
-nav .right a:last-child{
+nav .right .nav-contacto{
     padding: 5px 15px;
     color: var(--background-color);
     background-color: var(--text-color);
@@ -233,6 +233,10 @@ nav .right a span {
 }
 
 @media(max-width: 740px){
+    /* Nav Bar */
+    .nav .right .temaOscuro span {
+        display: none;
+    }
     /*Section 1: Hero */
     .hero-section{
         flex-direction: column-reverse;
@@ -240,6 +244,7 @@ nav .right a span {
     .hero-section .foto img{
         width: 250px;
     }
+
     /* Section 2: Habilidades */
     .habilidades-section h2{
         font-size: 30px;

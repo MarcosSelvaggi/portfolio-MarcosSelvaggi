@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="styles.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -34,10 +34,11 @@
                 <i class="fa-brands fa-linkedin"></i>
                 <span>LinkedIn</span>
             </a>
-            <a href="mailto:marcos.d.selvaggi@gmail.com">
+            <a href="#contacto" class="nav-contacto">
                 <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
+                <span>Contacto</span>
             </a>
+            
         </div>
     </nav>
     <main>
@@ -46,8 +47,8 @@
             <div class="text">
                 <h2>Bienvenido, soy Marcos </h2>
                 <p>Soy estudiante de la UTN - General Pachecho, me encuentro
-                    estudiando Tecnicatura en Programación y actualmente ando 
-                    viendo por mi cuenta HTML, CSS, Js junto con ASP.NET y base de datos.
+                    estudiando Tecnicatura en Programación y actualmente me estoy formando en 
+                    HTML, CSS, Js junto con ASP.NET y base de datos.
                 </p>
                 <div class="links">
                     <a href="#habilidades">
@@ -141,21 +142,31 @@
 
             <div class="grupo">
                 <div class="text">
-                    Puedes ponerte en contacto conmigo a través del siguiente formulario.
+                    Podés ponerte en contacto conmigo a través de mi 
+                    <a href="http://linkedin.com/in/marcos-selvaggi-4273871b6"><i class="fa-brands fa-linkedin"></i> LinkedIn 
+                    </a> 
+                    o si lo preferís podés escribirme 
+                    a través del siguiente formulario dejando tu nombre, mail y un mensaje. 
+                    
                 </div>
 
-                <form>
-                    <label for="nombreContacto">Nombre</label>
-                    <input type="text" id="nombreContacto">
+                <form action="https://api.web3forms.com/submit" method="POST" id="formularioContacto">
+                    <input type="hidden" name="access_key" value="99cd7f05-842c-440c-82d5-6184bac3688e">
 
+                    <label for="nombreContacto">Nombre</label>
+                    <input type="text" name="name" id="nombreContacto"required value="">
+                        
                     <label for="emailContacto" id=>Email</label>
-                    <input type="text" id="emailContacto">
+                    <input type="email" name="email" id="emailContacto" required value="">
                         
                     <label for="mensajeContacto">Mensaje</label>
-                    <textarea id="mensajeContacto" cols="30" rows="7"></textarea>
-                    <button type="submit" id="btnEnviarMensaje" onclick="enviarMensaje()">Enviar mensaje</button>
+                    <textarea name="message" id="mensajeContacto" cols="30" rows="7" required value=""></textarea>
+                    
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                    <button type="submit" id="btnEnviarMensaje">Enviar mensaje</button>
+
                 </form>
-                
             </div>
         </section>
     </main>
