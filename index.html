@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="foto">
-                <img src="imagenes/foto.webp" alt="Foto personal">
+                <img src="imagenes/foto.webp" id="fotoPersonal" alt="Foto personal">
             </div>
         </section>
         <!--Section 2: Habilidades-->
@@ -95,12 +95,12 @@
                     <img src="imagenes\csharp-logo.webp" alt="Logo C#">
                     <span>C#</span>
                 </div>
-
+                <!--
                 <div class="celda">
                     <img src="imagenes\aspnet-logo.webp" alt="Logo ASP.NET">
                     <span>ASP.NET</span>
                 </div>
-
+                -->
                 <div class="celda">
                     <img src="imagenes\sqlserver-logo.webp" alt="Logo SQL Server">
                     <span>SQL Server</span>
@@ -120,8 +120,12 @@
                 
                 <ul class="proyectos">
                     <li>
+                        <a href="https://github.com/MarcosSelvaggi/Proyecto_Progracion_II">TP N°.2 de Programación III</a><br>
+                        <label>Aplicación de Winform para gestión de artículos, trabajo en conjunto con miembros del grupo 1-A</label>
+                    </li>
+                    <li>
                         <a href="https://github.com/MarcosSelvaggi/portfolio-MarcosSelvaggi">Porfolio personal</a><br>
-                        <label>Portfolio personal, utiliza HTML, CSS y JS</label>
+                        <label>Portfolio personal, utiliza HTML y CSS</label>
                     </li>
                     <li>
                         <a href="https://github.com/MarcosSelvaggi/TPFinalNivel2_Selvaggi">TP Final del curso de nivel 2 de Maxi Programa</a><br>
@@ -136,7 +140,7 @@
             </div>
 
         </section>
-        <!--Section 4: Contact-->
+        <!--Section 4: Contacto-->
         <section id="contacto" class="contacto-section">
             <h2>Contacto</h2>
 
@@ -170,7 +174,10 @@
             </div>
         </section>
     </main>
-    
+    <footer>
+        <p>Hora actual: </p>
+        <p id="horaActual"></p>
+    </footer>
 </body>
 
 </html>
